@@ -105,7 +105,7 @@ function addTask()
         url: "task",
         data: form_data,
         success: function (response) {
-            $('#editModal').removeClass('show'); $('body').removeClass('modal-open'); $('.modal-backdrop').remove();
+            $('#addModal').removeClass('show'); $('body').removeClass('modal-open'); $('.modal-backdrop').remove();
             toastr.success(response.message);
             renderAllTasks();
         },
